@@ -17,7 +17,7 @@ template<typename T> std::vector<T> BucketSort(const std::vector<T> &data)
     {
         return data;
     }
-    std::vector<std::vector<T>> buckets(data.size() / 2);
+    std::vector<std::vector<T>> buckets(data.size() / 4);
     auto hash =
         [
             a = *std::min_element(data.cbegin(), data.cend()),
